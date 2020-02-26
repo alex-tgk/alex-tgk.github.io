@@ -4,8 +4,8 @@
     <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Carte Noire in Action</title>
-<meta name="description" content="A dark blog theme for Jekyll.">
+<title>Using thumbnails</title>
+<meta name="description" content="Just another tech blog">
 
 <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -39,9 +39,6 @@
 <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5e55b3dbcd73e43e"></script>
 
 
-
-<!-- MathJax for LaTeX -->
-<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
 
 </head>
@@ -87,23 +84,23 @@
     <div itemscope itemtype="http://schema.org/Article" class="col-md-12 article">
       
       <div class="thumb">
-        <i class="fa fa-cogs fa-4x"></i>
+        <img itemprop="image" src="https://i.imgur.com/aRQcGSi.png" alt="Thumbnail: jekyll" />
       </div>
       
 
-      <h1 class="header" itemprop="name">Carte Noire in Action</h1>
+      <h1 class="header" itemprop="name">Using thumbnails</h1>
 
       <div class="author">
         <small><i>
           
-          on <span itemprop="datePublished" content="2014-08-28">June 10, 2014</span>
+          on <span itemprop="datePublished" content="2014-08-28">June 8, 2014</span>
            under jekyll
         </i></small>
       </div>
 
       <div class="read-time">
         <small>
-          2 minute read
+          1 minute read
         </small>
       </div>
 
@@ -111,93 +108,44 @@
 
         
 
-        <span itemprop="articleBody"><p><strong>Note</strong> - This article is a derivative of <a href="http://pixyll.com/jekyll/pixyll/2014/06/10/see-pixyll-in-action/">“See pixyll in action”</a>, taken from the lovely jekyll theme <a href="http://pixyll.com/">pixyll</a>.</p>
+        <span itemprop="articleBody"><p>Carte Noire is designed to start each article with an all-white image as a
+thumbnail. These are created by adding a <code class="language-plaintext highlighter-rouge">thumbnail</code> parameter to the article’s
+<a href="http://jekyllrb.com/docs/frontmatter/">YAML frontmatter</a>. This thumbnail parameter is processed in one of two ways,
+images specified in <code class="language-plaintext highlighter-rouge">_data/thumbnails.yml</code> or using <a href="http://fortawesome.github.io/Font-Awesome/">Font Awesome</a>.</p>
 
-<p>All links are easy to <a href="#">locate and discern</a>, yet don’t detract from the harmony
-of a paragraph. The <em>same</em> goes for italics and <strong>bold</strong> elements. Even the the strikeout
-works if <del>for some reason you need to update your post</del>. For consistency’s sake,
-<ins>The same goes for insertions</ins>, of course.</p>
+<h2 id="images">Images</h2>
 
-<h3 id="code-with-syntax-highlighting">Code, with syntax highlighting</h3>
+<p>To use your own custom images as a thumbnail you must upload them to a web available
+location (I use <a href="http://imgur.com/">Imgur</a>) and then you need to add the url to <code class="language-plaintext highlighter-rouge">_data/thumbnail.yml</code>
+with an associated keyword.</p>
 
-<p>Code blocks use the <a href="https://noahfrederick.com/log/lion-terminal-theme-peppermint/">peppermint</a> theme.</p>
-
-<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">class</span> <span class="nc">Awesome</span> <span class="o">&lt;</span> <span class="no">ActiveRecord</span><span class="o">::</span><span class="no">Base</span>
-  <span class="kp">include</span> <span class="no">EvenMoreAwesome</span>
-
-  <span class="n">validates_presence_of</span> <span class="ss">:something</span>
-  <span class="n">validates</span> <span class="ss">:email</span><span class="p">,</span> <span class="ss">email_format: </span><span class="kp">true</span>
-
-  <span class="k">def</span> <span class="nf">initialize</span><span class="p">(</span><span class="n">email</span><span class="p">,</span> <span class="nb">name</span> <span class="o">=</span> <span class="kp">nil</span><span class="p">)</span>
-    <span class="nb">self</span><span class="p">.</span><span class="nf">email</span> <span class="o">=</span> <span class="n">email</span>
-    <span class="nb">self</span><span class="p">.</span><span class="nf">name</span> <span class="o">=</span> <span class="nb">name</span>
-  <span class="k">end</span>
-<span class="k">end</span></code></pre></figure>
-
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
-<span class="nt">&lt;title&gt;</span>Title<span class="nt">&lt;/title&gt;</span>
-
-<span class="nt">&lt;style&gt;body</span> <span class="p">{</span><span class="nl">width</span><span class="p">:</span> <span class="m">500px</span><span class="p">;}</span><span class="nt">&lt;/style&gt;</span>
-
-<span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"application/javascript"</span><span class="nt">&gt;</span>
-  <span class="kd">function</span> <span class="nx">$init</span><span class="p">()</span> <span class="p">{</span><span class="k">return</span> <span class="kc">true</span><span class="p">;}</span>
-<span class="nt">&lt;/script&gt;</span>
-
-<span class="nt">&lt;body&gt;</span>
-  <span class="nt">&lt;p</span> <span class="na">checked</span> <span class="na">class=</span><span class="s">"title"</span> <span class="na">id=</span><span class="s">'title'</span><span class="nt">&gt;</span>Title<span class="nt">&lt;/p&gt;</span>
-  <span class="c">&lt;!-- here goes the rest of the page --&gt;</span>
-<span class="nt">&lt;/body&gt;</span>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>jekyll: "http://i.imgur.com/aRQcGSi.png"
 </code></pre></div></div>
 
-<h1 id="headings">Headings!</h1>
+<p>You then add a <code class="language-plaintext highlighter-rouge">thumbnail</code> option to the article’s frontmatter and provide the keyword
+for that thumbnail.</p>
 
-<p>They’re responsive, and well-proportioned (in <code class="language-plaintext highlighter-rouge">padding</code>, <code class="language-plaintext highlighter-rouge">line-height</code>, <code class="language-plaintext highlighter-rouge">margin</code>, and <code class="language-plaintext highlighter-rouge">font-size</code>).</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>thumbnail: jekyll
+</code></pre></div></div>
 
-<h5 id="they-draw-the-perfect-amount-of-attention">They draw the perfect amount of attention</h5>
+<p>This allows you to re-use thumbnails across multiple articles without having to
+specify the url each time.</p>
 
-<p>This allows your content to have the proper informational and contextual hierarchy. Yay.</p>
+<h2 id="font-awesome">Font Awesome</h2>
 
-<h3 id="there-are-lists-too">There are lists, too</h3>
+<p>If jekyll can’t find a corresponding image in your <code class="language-plaintext highlighter-rouge">thumbnail.yml</code> file then it
+will assume you want to use a Font Awesome icon instead. You can find the full
+list of Font Awesome icons <a href="http://fortawesome.github.io/Font-Awesome/icons/">here</a>.</p>
 
-<ul>
-  <li>Apples</li>
-  <li>Oranges</li>
-  <li>Potatoes</li>
-  <li>Milk</li>
-</ul>
+<p>So for example if your article is about android and you want to use the <a href="http://fortawesome.github.io/Font-Awesome/icon/android/">android icon</a>
+from font awesome you can just specify the following in your frontmatter.</p>
 
-<ol>
-  <li>Mow the lawn</li>
-  <li>Feed the dog</li>
-  <li>Dance</li>
-</ol>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>thumbnail: android
+</code></pre></div></div>
 
-<h3 id="images-look-great-too">Images look great, too</h3>
-
-<p><img src="https://i.imgur.com/DMCHDqF.jpg" alt="Thumper" /></p>
-
-<h3 id="stylish-blockquotes-included">Stylish blockquotes included</h3>
-
-<p>You can use the markdown quote syntax, <code class="language-plaintext highlighter-rouge">&gt;</code> for simple quotes.</p>
-
-<blockquote>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse quis porta mauris.</p>
-</blockquote>
-
-<h3 id="latex-support">LaTeX support</h3>
-
-<p>The default math delimiters are $$. Hence <code class="language-plaintext highlighter-rouge">$$ E = m \cdot c^2 $$</code> yields <script type="math/tex">E = m \cdot c^2</script></p>
-
-<p>And here’s something more fancy:</p>
-
-<script type="math/tex; mode=display">\zeta(s) = \frac{1}{\Gamma(s)} \int \limits_0^\infty x^{s-1} \sum_{n=1}^\infty e^{-nx} \mathrm{d}x = \frac{1}{\Gamma(s)} \int \limits_0^\infty \frac{x^{s-1}}{e^x - 1} \mathrm{d}x</script>
-
-<h3 id="theres-more-being-added-all-the-time">There’s more being added all the time</h3>
-
-<p>Checkout the <a href="https://github.com/jacobtomlinson/carte-noire">Github repository</a> to request,
-or add, features.</p>
-
-<p>Happy writing.</p>
+<p>Then in the future if you decide you want to use your own android icon you can just
+add it to <code class="language-plaintext highlighter-rouge">_data/thumbnails.yml</code> which will override it for all articles using
+the android thumbnail.</p>
 
 </span>
 
@@ -214,7 +162,7 @@ or add, features.</p>
         <div class="tags">
           <small>
           <i class="fa fa-tags"></i>
-            demo, action, carte, noire
+            thumbnails, carte noire
           </small>
         </div>
         
