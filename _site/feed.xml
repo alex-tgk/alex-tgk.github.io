@@ -5,9 +5,9 @@
     <description>A dark blog theme for Jekyll.</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 25 Feb 2020 18:58:34 -0500</pubDate>
-    <lastBuildDate>Tue, 25 Feb 2020 18:58:34 -0500</lastBuildDate>
-    <generator>Jekyll v4.0.0</generator>
+    <pubDate>Tue, 25 Feb 2020 19:11:57 -0500</pubDate>
+    <lastBuildDate>Tue, 25 Feb 2020 19:11:57 -0500</lastBuildDate>
+    <generator>Jekyll v3.8.5</generator>
     
       <item>
         <title>Welcome to Carte Noire</title>
@@ -83,7 +83,7 @@ works if &lt;del&gt;for some reason you need to update your post&lt;/del&gt;. Fo
 
 &lt;h1 id=&quot;headings&quot;&gt;Headings!&lt;/h1&gt;
 
-&lt;p&gt;They’re responsive, and well-proportioned (in &lt;code class=&quot;highlighter-rouge&quot;&gt;padding&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;line-height&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;margin&lt;/code&gt;, and &lt;code class=&quot;highlighter-rouge&quot;&gt;font-size&lt;/code&gt;).&lt;/p&gt;
+&lt;p&gt;They’re responsive, and well-proportioned (in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;padding&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;line-height&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;margin&lt;/code&gt;, and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;font-size&lt;/code&gt;).&lt;/p&gt;
 
 &lt;h5 id=&quot;they-draw-the-perfect-amount-of-attention&quot;&gt;They draw the perfect amount of attention&lt;/h5&gt;
 
@@ -110,7 +110,7 @@ works if &lt;del&gt;for some reason you need to update your post&lt;/del&gt;. Fo
 
 &lt;h3 id=&quot;stylish-blockquotes-included&quot;&gt;Stylish blockquotes included&lt;/h3&gt;
 
-&lt;p&gt;You can use the markdown quote syntax, &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;gt;&lt;/code&gt; for simple quotes.&lt;/p&gt;
+&lt;p&gt;You can use the markdown quote syntax, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;gt;&lt;/code&gt; for simple quotes.&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse quis porta mauris.&lt;/p&gt;
@@ -118,7 +118,7 @@ works if &lt;del&gt;for some reason you need to update your post&lt;/del&gt;. Fo
 
 &lt;h3 id=&quot;latex-support&quot;&gt;LaTeX support&lt;/h3&gt;
 
-&lt;p&gt;The default math delimiters are $$. Hence &lt;code class=&quot;highlighter-rouge&quot;&gt;$$ E = m \cdot c^2 $$&lt;/code&gt; yields &lt;script type=&quot;math/tex&quot;&gt;E = m \cdot c^2&lt;/script&gt;&lt;/p&gt;
+&lt;p&gt;The default math delimiters are $$. Hence &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$$ E = m \cdot c^2 $$&lt;/code&gt; yields &lt;script type=&quot;math/tex&quot;&gt;E = m \cdot c^2&lt;/script&gt;&lt;/p&gt;
 
 &lt;p&gt;And here’s something more fancy:&lt;/p&gt;
 
@@ -177,23 +177,23 @@ and &lt;a href=&quot;http://en.wikipedia.org/wiki/Textile_(markup_language)&quot
       <item>
         <title>Using thumbnails</title>
         <description>&lt;p&gt;Carte Noire is designed to start each article with an all-white image as a
-thumbnail. These are created by adding a &lt;code class=&quot;highlighter-rouge&quot;&gt;thumbnail&lt;/code&gt; parameter to the article’s
+thumbnail. These are created by adding a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;thumbnail&lt;/code&gt; parameter to the article’s
 &lt;a href=&quot;http://jekyllrb.com/docs/frontmatter/&quot;&gt;YAML frontmatter&lt;/a&gt;. This thumbnail parameter is processed in one of two ways,
-images specified in &lt;code class=&quot;highlighter-rouge&quot;&gt;_data/thumbnails.yml&lt;/code&gt; or using &lt;a href=&quot;http://fortawesome.github.io/Font-Awesome/&quot;&gt;Font Awesome&lt;/a&gt;.&lt;/p&gt;
+images specified in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_data/thumbnails.yml&lt;/code&gt; or using &lt;a href=&quot;http://fortawesome.github.io/Font-Awesome/&quot;&gt;Font Awesome&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h2 id=&quot;images&quot;&gt;Images&lt;/h2&gt;
 
 &lt;p&gt;To use your own custom images as a thumbnail you must upload them to a web available
-location (I use &lt;a href=&quot;http://imgur.com/&quot;&gt;Imgur&lt;/a&gt;) and then you need to add the url to &lt;code class=&quot;highlighter-rouge&quot;&gt;_data/thumbnail.yml&lt;/code&gt;
+location (I use &lt;a href=&quot;http://imgur.com/&quot;&gt;Imgur&lt;/a&gt;) and then you need to add the url to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_data/thumbnail.yml&lt;/code&gt;
 with an associated keyword.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;jekyll: &quot;http://i.imgur.com/aRQcGSi.png&quot;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;jekyll: &quot;http://i.imgur.com/aRQcGSi.png&quot;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;You then add a &lt;code class=&quot;highlighter-rouge&quot;&gt;thumbnail&lt;/code&gt; option to the article’s frontmatter and provide the keyword
+&lt;p&gt;You then add a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;thumbnail&lt;/code&gt; option to the article’s frontmatter and provide the keyword
 for that thumbnail.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;thumbnail: jekyll
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;thumbnail: jekyll
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;This allows you to re-use thumbnails across multiple articles without having to
@@ -201,18 +201,18 @@ specify the url each time.&lt;/p&gt;
 
 &lt;h2 id=&quot;font-awesome&quot;&gt;Font Awesome&lt;/h2&gt;
 
-&lt;p&gt;If jekyll can’t find a corresponding image in your &lt;code class=&quot;highlighter-rouge&quot;&gt;thumbnail.yml&lt;/code&gt; file then it
+&lt;p&gt;If jekyll can’t find a corresponding image in your &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;thumbnail.yml&lt;/code&gt; file then it
 will assume you want to use a Font Awesome icon instead. You can find the full
 list of Font Awesome icons &lt;a href=&quot;http://fortawesome.github.io/Font-Awesome/icons/&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;So for example if your article is about android and you want to use the &lt;a href=&quot;http://fortawesome.github.io/Font-Awesome/icon/android/&quot;&gt;android icon&lt;/a&gt;
 from font awesome you can just specify the following in your frontmatter.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;thumbnail: android
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;thumbnail: android
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Then in the future if you decide you want to use your own android icon you can just
-add it to &lt;code class=&quot;highlighter-rouge&quot;&gt;_data/thumbnails.yml&lt;/code&gt; which will override it for all articles using
+add it to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_data/thumbnails.yml&lt;/code&gt; which will override it for all articles using
 the android thumbnail.&lt;/p&gt;
 
 </description>
